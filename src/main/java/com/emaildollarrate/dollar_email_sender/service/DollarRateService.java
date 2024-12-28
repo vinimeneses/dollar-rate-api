@@ -19,4 +19,5 @@ public class DollarRateService {
         String url = "https://v6.exchangerate-api.com/v6/" + apiKey + "/pair/USD/BRL";
         return webClient.get().uri(url).retrieve().bodyToMono(DollarRate.class);
     }
+
 }
